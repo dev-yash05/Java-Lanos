@@ -1,21 +1,24 @@
 import java.util.Scanner;
-
-//3. Print first N natural numbers
-//Explanation: User provides N, loop prints 1 to N.
+//6. Sum of numbers from 1 to N
+//Explanation: Add every i to sum variable.
 //
 //Input: 5
 //
-//Output: 1 2 3 4 5
-public class Ques3 {
-    public static void main(String[] args){
+//Output: 15
+public class Ques6 {
+    public static void main(String[] args) {
+
         Scanner input = new Scanner(System.in);
         int start = 1;
+        int sum = 0;
+
         System.out.print("enter n :");
         int n = input.nextInt();
 
         while(start <= n){
-            System.out.print(start + " ");
+            sum = sum + start;
             start++;
         }
+        System.out.println(sum);
     }
 }
